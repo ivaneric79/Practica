@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id = "com.cenet.hotel"
+        version = "0.0.1">
+    <name>Hotel</name>
+
+    <description>
+        Practicas de Diplomado
+    </description>
+
+    <author href="http://www.iwsoft.com.mx" email="ivaneric79@gmail.com">
+       Ivan Eric López
+    </author>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+    <preference name="phonegap-version" value="2.3.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+
+    <icon src="icon.png" />
+    <icon src="css/images/logo.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="css/images/logo.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="css/images/logo.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="css/images/logo.png" gap:platform="android" gap:density="xhdpi" />
+    <icon src="css/images/logo.png" gap:platform="blackberry" />
+    <icon src="css/images/logo.png" gap:platform="blackberry" gap:state="hover"/>
+    <icon src="css/images/logo.png" gap:platform="ios" width="57" height="57" />
+    <icon src="css/images/logo.png" gap:platform="ios" width="72" height="72" />
+    <icon src="css/images/logo.png" gap:platform="ios" width="114" height="114" />
+    <icon src="css/images/logo.png" gap:platform="ios" width="144" height="144" />
+    <icon src="css/images/logo.png" gap:platform="webos" />
+    <icon src="css/images/logo.png" gap:platform="winphone" />
+    <icon src="css/images/logo.png" gap:platform="winphone" gap:role="background" />
+
+    <gap:splash src="css/images/splash.jpg" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="css/images/splash.jpg" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="css/images/splash.jpg" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="css/images/splash.jpg" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="css/images/splash.jpg" gap:platform="blackberry" />
+    <gap:splash src="css/images/splash.jpg" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="css/images/splash.jpg" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="css/images/splash.jpg" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="css/images/splash.jpg" gap:platform="ios" width="1024" height="768" />
+    <gap:splash src="css/images/splash.jpg" gap:platform="winphone" />
+	<access origin="*" subdomains="true"/>
+</widget>
