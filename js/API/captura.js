@@ -21,7 +21,7 @@ function capturaImg(){
        
     },function captureError(error) {
         
-        pgAlert('captura de imagen',error.code); 
+        pgAlert('Error',error.code); 
        
     }, {limit: 1});
      
