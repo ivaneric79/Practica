@@ -19,6 +19,15 @@ logSend(nom,lug,ema,tel);
 			pgAlert("Error",'Todos los campos son requeridos.');	
 		}
 	});
+
+$('#regFoto').tap(function(){
+	var ruta = capturaImg();
+}
+
+
+
+
+
 		
 		//otros eventos de phonegap
 		//document.addEventListener("pause",funcion,false);
