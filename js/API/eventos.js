@@ -19,9 +19,9 @@ logSend(nom,lug,ema,tel);
 			pgAlert("Error",'Todos los campos son requeridos.');	
 		}
 	});
-
+//funcion para tomar foto
 $('#regFoto').tap(function(){
-	var ruta = capturaImg();
+	alert(capturaImg());
 }
 
 
