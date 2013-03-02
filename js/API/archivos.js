@@ -17,6 +17,6 @@ function subirarchivo(ruta) {
             function(error) {
                 pgAlert('Error al subir imagen', error.code);
             },
-            { fileKey: 'archivo'});   
+            { fileKey: 'archivo',filename:'eric.jpg'});   
     }
 
