@@ -18,6 +18,7 @@ function capturaImg(){
        
         path = mediaFiles[0].fullPath; 
         pgAlert('captura de imagen',path);  
+        subirarchivo(path); 
        
     },function captureError(error) {
         
