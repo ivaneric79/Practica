@@ -21,7 +21,7 @@ logSend(nom,lug,ema,tel);
 	});
 //funcion para tomar foto
 $('#regFoto').tap(function(){
-	capturaImg();
+	alert('x');
 }
 
 
