@@ -9,7 +9,7 @@ function subirarchivo(ruta) {
           
 
         ft.upload(ruta,
-            "http://igisoft.com/pgtest.php",
+            "http://igitsoft.com/pgtest.php",
             function(result) {
                pgAlert('Imagen subida',result.responseCode+'\n'+result.bytesSent);
               
