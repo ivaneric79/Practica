@@ -2,29 +2,30 @@
  * @author IVAN E LOPEZ GONZALEZ
  */
 
-  function captureSuccess(mediaFiles) {
-        var  path;
-        path = mediaFiles[0].fullPath;     
-        return path;
-    }
+ 
 
     // Called if something bad happens.
     // 
-    function captureError(error) {
-        var msg = 'An error occurred during capture: ' + error.code;
-       return msg;
-    }
+ 
 
 
 
 
 function capturaImg(){
+	 var  path;
 	
-
-	
-	 navigator.device.capture.captureImage(captureSuccess, captureError, {limit: 1});
-     ruta = captureSuccess;
+	 navigator.device.capture.captureImage(function captureSuccess(mediaFiles) {
+       
+        path = mediaFiles[0].fullPath; 
+        alert (path);    
+       
+    }, captureError(error) {
+        
+        path = 'An error occurred during capture: ' + error.code;
+        alert (path);
+    }, {limit: 1});
+     
      
 	
-	return ruta;
+	
 }
