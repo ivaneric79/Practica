@@ -4,6 +4,11 @@ $(document).ready(function(e){
 			if(!isLogin())
 		window.location.href = "#login";
 		
+		//funcion para tomar foto
+$('#regFoto').tap(function(){
+	capturaImg();
+});
+		
 	//Funcionalidad Login
 	$('#regSubmit').tap(function(){
 		if($('#regNombre').val()!='' && $('#regLugar').val()!='' && $('#regEmail').val()!='' && $('#regTel').val()!=''){
@@ -19,10 +24,7 @@ logSend(nom,lug,ema,tel);
 			pgAlert("Error",'Todos los campos son requeridos.');	
 		}
 	});
-//funcion para tomar foto
-$('#regFoto').tap(function(){
-	alert('x');
-}
+
 
 
 
