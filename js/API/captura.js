@@ -17,12 +17,12 @@ function capturaImg(){
 	 navigator.device.capture.captureImage(function captureSuccess(mediaFiles) {
        
         path = mediaFiles[0].fullPath; 
-        alert (path);    
+        pgAlert('captura de imagen',path);  
        
-    }, captureError(error) {
+    },function captureError(error) {
         
-        path = 'An error occurred during capture: ' + error.code;
-        alert (path);
+        pgAlert('captura de imagen',error.code); 
+       
     }, {limit: 1});
      
      
