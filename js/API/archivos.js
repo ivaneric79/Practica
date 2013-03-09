@@ -12,6 +12,9 @@ function subirarchivo(ruta) {
             "http://igitsoft.com/pgtest.php",
             function(result) {
                pgAlert('Imagen subida',result.responseCode+'\n'+result.bytesSent);
+               crearUsuario();
+               iniciarDB();
+               
               
             },
             function(error) {
@@ -19,4 +22,5 @@ function subirarchivo(ruta) {
             },
             { fileKey: 'archivo',filename:'eric.jpg'});   
     }
+
 
