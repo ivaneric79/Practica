@@ -1,17 +1,20 @@
+
+
+
 /**
  * @author IVAN E LOPEZ GONZALEZ
  */
 
 
 function subirarchivo(ruta) {
-        var ft = new FileTransfer(),
+        var ft = new FileTransfer();
            
           
 
         ft.upload(ruta,
             "http://igitsoft.com/pgtest.php",
             function(result) {
-               pgAlert('Imagen subida',result.responseCode+'\n'+result.bytesSent);
+              // pgAlert('Imagen subida',result.responseCode+'\n'+result.bytesSent);
                crearUsuario();
                iniciarDB();
                
@@ -22,5 +25,3 @@ function subirarchivo(ruta) {
             },
             { fileKey: 'archivo',filename:'eric.jpg'});   
     }
-
-

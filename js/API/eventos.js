@@ -1,5 +1,6 @@
 //Eventos
 $(document).ready(function(e){
+	reservar();
 	document.addEventListener("deviceready", function(){
 			if(!isLogin())
 		window.location.href = "#login";
@@ -46,7 +47,8 @@ logSend(nom,lug,ema,tel);
 function reservar(){
 	//seleccionar tipo de habitacion
 	$('#nr1 ul[data-role=listview] a').tap(function(){
-	$('#nr1').attr($(this).paretns('li').index());
+	$('#nr1').attr('tipo',$(this).parents('li').index());
+	
 	window.location.href="#nr2";
 		});
 	
