@@ -2,7 +2,7 @@
 $(document).ready(function(e){
 	
 	document.addEventListener("deviceready", function(){
-		alert(isLogin);
+		alert(isLogin());
 			//if(!isLogin()){
 	//	window.location.href = "#login";}
 		
