@@ -61,15 +61,16 @@ function getID(){
 
 		
 	accesoDB().transaction(nfilas,errorCB);
-	return = regreso+1;
+	return regreso+1;
 	
 }
 
-function guardarReservaciones(id,habs,pers,dias,tipo){
-	
+function guardarReservacion(id,habs,pers,dias,tipo){
+	var f=new date();
+	var fecha = d.getDate() + '/' + f.getMonth() + '/' + f.getFullYear();
 	
       
-        accesoDB().transaction(executeSql('INSERT INTO reserva (rId, fecha, habitaciones, personas, dias, tipo) VALUES ('+id+','+habs+','+pers+','+dias+','+tipo+')'),
+        accesoDB().transaction(function(tx){tx.executeSql('INSERT INTO reserva (rId, fecha, habitaciones, personas, dias, tipo) VALUES ('+id+',"'+fecha+'","'+habs+'","'+pers+'","'+dias+'","'+tipo+'")');},
         errorCB,successCB);
        
 

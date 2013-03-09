@@ -1,6 +1,6 @@
 //Eventos
 $(document).ready(function(e){
-	reservar();
+	
 	document.addEventListener("deviceready", function(){
 			if(!isLogin())
 		window.location.href = "#login";
