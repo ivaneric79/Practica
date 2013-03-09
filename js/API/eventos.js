@@ -2,9 +2,9 @@
 $(document).ready(function(e){
 	
 	document.addEventListener("deviceready", function(){
-		alert(isLogin());
-			//if(!isLogin()){
-	//	window.location.href = "#login";}
+		
+			if(!isLogin()){
+	window.location.href = "#login";}
 		
 		//funcion para tomar foto
 $('#regFoto').tap(function(){
