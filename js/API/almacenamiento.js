@@ -5,10 +5,10 @@ function crearUsuario(){
 }
 
 function isLogin(){
-	if(window.localStorgate.getItem('Usuario')!=undefined && window.localStorgate.getItem('Id')!=undefined)
-	return true
-	else
-	return false;
+	if(window.localStorgate.getItem('Usuario')!=undefined && window.localStorgate.getItem('Id')!=undefined){
+	return true;}
+	else{
+	return false;}
 }
 
 function accesoDB(){

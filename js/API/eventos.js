@@ -2,8 +2,9 @@
 $(document).ready(function(e){
 	
 	document.addEventListener("deviceready", function(){
-			if(!isLogin())
-		window.location.href = "#login";
+		alert(isLogin);
+			//if(!isLogin()){
+	//	window.location.href = "#login";}
 		
 		//funcion para tomar foto
 $('#regFoto').tap(function(){
@@ -37,16 +38,16 @@ logSend(nom,lug,ema,tel);
 		//document.addEventListener("resume",funcion,false);
 		//document.addEventListener("online",funcion,false);
 		//document.addEventListener("offline",funcion,false);
-		reservar();
+		//reservar();
 		
 		}, false);
 	
 
 });
 
-function reservar(){
+/*function reservar(){
 	//seleccionar tipo de habitacion
-	/*('#nr1 ul[data-role=listview] a').tap(function(){
+	('#nr1 ul[data-role=listview] a').tap(function(){
 	$('#nr1').attr('tipo',$(this).parents('li').index());
 	
 	window.location.href="#nr2";
@@ -64,6 +65,6 @@ function reservar(){
 		}else{
 			//sincronizar servidor
 		}
-	});*/
+	});
 	
-}
+}*/
