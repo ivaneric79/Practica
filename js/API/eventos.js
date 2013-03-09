@@ -46,7 +46,7 @@ logSend(nom,lug,ema,tel);
 
 function reservar(){
 	//seleccionar tipo de habitacion
-	$('#nr1 ul[data-role=listview] a').tap(function(){
+	/*('#nr1 ul[data-role=listview] a').tap(function(){
 	$('#nr1').attr('tipo',$(this).parents('li').index());
 	
 	window.location.href="#nr2";
@@ -64,6 +64,6 @@ function reservar(){
 		}else{
 			//sincronizar servidor
 		}
-	});
+	});*/
 	
 }

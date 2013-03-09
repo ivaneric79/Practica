@@ -6,7 +6,7 @@ function crearUsuario(){
 
 function isLogin(){
 	if(window.localStorgate.getItem('Usuario')!=undefined && window.localStorgate.getItem('Id')!=undefined)
-	return true;
+	return true
 	else
 	return false;
 }
@@ -47,8 +47,8 @@ accesoDB().transaction(populateDB, errorCB, successCB);
 function getID(){
 	var regreso=0;
 	
-	 function querySuccess(tx, results) {
-        regreso = resultao.rows.length;
+	 function querySuccess(tx, resultado) {
+        regreso = resultado.rows.length;
         }
         
     function errorCB(err) {
@@ -56,7 +56,7 @@ function getID(){
     }
 	
 	function nfilas(tx){
-		tx.executeSql('SELECT * FROM reservas',[],querySuccess,errorCB);
+		tx.executeSql('SELECT * FROM reserva',[],querySuccess,errorCB);
 	}
 
 		
