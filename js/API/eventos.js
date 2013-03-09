@@ -1,6 +1,6 @@
 //Eventos
 $(document).ready(function(e){
-	
+	alert(isLogin());
 	document.addEventListener("deviceready", function(){
 		alert(isLogin());
 			//if(!isLogin()){
